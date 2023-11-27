@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
     <nav>
-        <div>
+        <div class="nav-main">
             <div>
                 <img src="download.svg" alt="logo">
             </div>
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="#">Products</a>
                 </li>
@@ -28,17 +29,38 @@
         </div>    
     </nav>
 
-    <img src="theStore.png" alt="theStore">
+    
 
     <form>
-        <label>Name: </label>
-        <input type="text" name="txtName"> 
-        <label>Price</label>
-        <input type="number" price ="numPrice">     
-        <label>Inventory</label>
-        <input type="number" inventory = "numInventory"> 
-        <input type="submit" name="btncrear" value="Create Product">
+        
+        <div class="container">
+            <div class="card2">
+                <div class="card2-container">
 
+                    <h3>New Product</h3><br>
+
+                    <div>
+                        <label>Name: </label><br><br>
+                        <input type="text" name="txtName"> <br><br>
+                    </div>
+
+                    <div>
+                        <label>Price</label><br><br>
+                        <input type="number" price ="numPrice"> <br><br>    
+                    </div>
+                    
+                    <div>
+                        <label>Inventory</label><br><br>
+                        <input type="number" inventory = "numInventory"> <br><br>
+                    </div>
+                    
+                    <div>
+                        <button>Create Product</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>    
     </form>
 
 
